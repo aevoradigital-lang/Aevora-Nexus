@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aevora — Photography</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="photography-page">
+
+<!-- =========================================================
+  HERO PHOTO: put your photo in the image/ folder and name it
+  hero-photography.jpg — it will show automatically.
+
+  PORTFOLIO PHOTOS: this is the ONLY line you need to touch to
+  add or remove portfolio photos. Put your image files inside
+  the portfolio/ folder, then list their file names below.
+  The gallery arranges itself automatically — any number of
+  photos, any orientation (portrait or landscape).
+
+  Example:
+  const PORTFOLIO_IMAGES = ["shoot1.jpg", "shoot2.jpg", "shoot3.jpg"];
+  ========================================================= -->
+<script>
+  const PORTFOLIO_IMAGES = [
+    "001.jpg",
+    "002.jpg",
+    "003.jpg",
+    "004.jpg",
+    "005.jpg",
+    "006.jpg",
+    "007.jpg",
+    "008.jpg",
+    "009.jpg",
+    "010.jpg",
+    "011.jpg",
+    "012.png"
+  ];
+</script>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="photography.html">
+      <div class="signature">Aevora</div>
+      <div class="signature-sub">BRANDING &amp; MARKETING</div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="photography.html" class="active">Home</a></li>
+      <li><a href="photography.html#portfolio">Portfolio</a></li>
+      <li><a href="digital.html">Digital Marketing</a></li>
+      <li><a href="photography.html#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="photography.html#contact">Book a shoot</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-fallback"></div>
+  <img class="hero-bg" src="image/hero-photography.jpg" alt="" onerror="this.style.display='none'">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">CAPTURING STORIES</div>
+    <h1>Through<br><em>My Lens.</em></h1>
+    <p>Product and fashion photography, ad shoot production, and visuals built to sell — not just look good.</p>
+    <div class="cta-row">
+      <a href="photography.html#portfolio" class="btn btn-solid">View Portfolio →</a>
+      <a href="photography.html#contact" class="btn btn-outline">Book a shoot</a>
+    </div>
+    <div class="split-card">
+      <span>Need marketing too?</span>
+      <a href="digital.html">View Digital Marketing →</a>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="section-eyebrow">SELECTED WORK</div>
+    <h2>Real shoots. Real brands.</h2>
+    <p class="lede">A glimpse of recent product and fashion photography.</p>
+    <div class="masonry" id="portfolioGrid"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-eyebrow">WHY AEVORA</div>
+    <h2>Why shoot with us?</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>Direct collaboration</h3>
+        <p>Work directly with the photographer shooting your brand. No middle layers, no delays.</p>
+      </div>
+      <div class="why-item">
+        <h3>Styled to sell</h3>
+        <p>Every shoot is planned around how the final image will actually be used — feed, storefront or ad.</p>
+      </div>
+      <div class="why-item">
+        <h3>One studio, full service</h3>
+        <p>Pair your shoot with Aevora's marketing team for a complete brand push.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-eyebrow">GET IN TOUCH</div>
+    <h2>Book a shoot</h2>
+    <p class="lede">Tell us what you're shooting and when. We'll get back within a day.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><a href="mailto:aevoradigital@gmail.com">aevoradigital@gmail.com</a></p>
+        <p><a href="tel:+918015423892">+91 80154 23892</a></p>
+        <p><a href="https://wa.me/918015423892" target="_blank" rel="noopener">WhatsApp us →</a></p>
+        <p>Thanjavur, Tamil Nadu, India</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/puviko_lakshmanan" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/in/puviko-lakshmanan-984710328" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <form id="contactForm" action="https://formspree.io/f/meeyeenn" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="text" name="business" placeholder="Business / brand name">
+        <textarea name="message" placeholder="What do you need help with?" required></textarea>
+        <button type="submit">Send message →</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="signature">Aevora</div>
+        <div class="footer-tag">Strategy. Content. Visuals.</div>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="photography.html">Home</a></li>
+          <li><a href="photography.html#portfolio">Portfolio</a></li>
+          <li><a href="digital.html">Digital Marketing</a></li>
+        </ul>
+        <ul>
+          <li><a href="photography.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Aevora. All rights reserved.</span>
+      <span>Thanjavur, Tamil Nadu, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
